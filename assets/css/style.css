@@ -60,9 +60,9 @@ main{
     position: absolute;
     right: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
-    transform: translate(38%);
+    height: 350px;
+    width: 350px;
+    transform: translateY(-40px);
 }
 section{
     padding: 1em 3em;
@@ -121,12 +121,16 @@ section h2{
     margin-left: 0.51em;
 }
 aside{
+    position: relative;
     padding: 3em 3em;
     display: flex;
     justify-content: center;
 }
 footer{
-    width: 30%;
+    width: 100%;
+    position: sticky;
+    top: 40px;
+    z-index: 10;
 }
 footer h3{
     white-space: nowrap;
@@ -139,6 +143,7 @@ footer h3{
     flex-wrap: wrap;
     opacity: 0.5;
     margin: 0.6em;
+    width: 100%;
 }
 #topics li{
     border: 1px solid lightgray;
@@ -147,6 +152,9 @@ footer h3{
 }
 #footer-stuff li{
     margin-bottom: 0.9em;
+}
+.alticle-info{
+    width: 70%;
 }
 .bottom-article{
     display: flex;
@@ -158,14 +166,13 @@ footer h3{
     margin: 0.2em auto;
 }
 .article-pic{
-    width: 200px;
-    height: 150px;
     padding: 1em;
     overflow: hidden;
     text-align: center;
 }
 .article-pic img{
-    width: 100%;
+    width: 200px;
+    height: 150px;
 }
 .summary{
     opacity: 0.6;
@@ -198,3 +205,8 @@ footer h3{
     background-color: white;
 }
 
+.stick-me{
+    width: 30%;
+    position: sticky;
+    top: 50px;
+}
